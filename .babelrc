@@ -1,0 +1,22 @@
+{
+  "env": {
+    "cjs": {
+      "presets": [
+        ["env", {
+          "loose": true,
+          "modules": false
+        }]
+      ],
+      "plugins": [
+        "external-helpers",
+        "syntax-flow",
+        "transform-flow-strip-types"
+      ]
+    },
+    "sandbox": {
+      "presets": ["env"]
+    }
+  }
+}
+
+

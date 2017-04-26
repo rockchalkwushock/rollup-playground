@@ -1,0 +1,4 @@
+{
+  "extends": "equimper",
+  "plugins": ["flowtype"]
+}
