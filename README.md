@@ -43,6 +43,8 @@ yarn sandbox
 > ```
 > _but I still will get the comments from **non-exported** functions_. :confused:
 
-- [ ] Find away to build the library with **one** `rollup.config.js` & **one** npm script.
+- [x] Find away to build the library with **one** `rollup.config.js` & **one** npm script.
 
 > _[`rollup-plugin-multidest`](https://github.com/audinue/rollup-plugin-multidest) is a sound option; but I have not been able to incorporate the `es` build with this and still get the expected results throughout all files. `BABEL_ENV=cjs` is needed for all commonjs builds and I don't want babel touching my code when building `es`._
+
+> Solved in this [commit](https://github.com/rockchalkwushock/rollup-playground/commit/552f411b08aadcf9f71b418b4ac82aba0dd558ea).
