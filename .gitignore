@@ -40,6 +40,11 @@ jspm_packages
 .idea
 .vscode
 
+# Build
+dist
+es
+lib
+
 # Other
 .DS_Store
 .env

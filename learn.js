@@ -1,5 +1,4 @@
 import babel from 'rollup-plugin-babel';
-import babelrc from 'babelrc-rollup';
 import cleanup from 'rollup-plugin-cleanup';
 import commonjs from 'rollup-plugin-commonjs';
 import eslint from 'rollup-plugin-eslint';
@@ -30,8 +29,7 @@ const config = {
     flow({ pretty: true }),
     // Transpile code based off of the .babelrc.
     // https://github.com/rollup/rollup-plugin-babel
-    // https://github.com/eventualbuddha/babelrc-rollup
-    babel(babelrc()),
+    babel(),
     // Customize the build based on environments using this.
     // Will not build code that does not pertain to current
     // environment.
