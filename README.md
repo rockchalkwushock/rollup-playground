@@ -9,16 +9,10 @@ This repository is following along with the video tutorial series from [Jason Le
 A breakdown about the `rollup.config.js` can be found in `learn.js`. It is much different than the actual `rollup.config.js` as I was trying to make it as streamline as possible. Still wanting to find a way to process the **whole** library build with just one configuration and one script. `learn.js` is commented out and has links to the plugin repositories. Note that the _mini-library_ does not use external packages hence no need for `node-resolve` in either of the configs.
 
 ```bash
-yarn start && npm pack
-# removes defined directories.
-# runs all build scripts reading from
-# rollup.config.js & rollup.config.es.js
-# generates tarball file.
-open rollup-playground-0.1.0.tgz
-# generates package/
-yarn sandbox
-# runs all sandbox scripts
-# logs out to console
+yarn build # generates all distributions of the code.
+yarn output # packages code & opens for local use.
+yarn sandbox # executes library's code.
+yarn run clean # removes all generated files.
 ```
 
 ## My Notes

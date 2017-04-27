@@ -14,15 +14,12 @@
   "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rockchalkwushock.github.io/rcws-development/)",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "clean": "rimraf dist es lib package *.tgz",
-    "flow": "flow check",
-    "lint": "eslint src",
-    "lint:fix": "yarn lint -- --fix",
-    "start": "yarn run clean && cross-env NODE_ENV=production yarn build",
-    "sandbox": "npm-run-all --parallel sandbox:*",
-    "sandbox:cjs": "babel-node sandbox-cjs.js",
-    "sandbox:es": "cross-env BABEL_ENV=sandbox babel-node sandbox-es.js"
+    "clean": "nps clean",
+    "build": "nps build",
+    "dev": "nps build.dev",
+    "output": "nps library",
+    "sandbox": "nps sandbox",
+    "validate": "nps validate"
   },
   "devDependencies": {
     "babel-cli": "~6.24.1",
@@ -37,6 +34,8 @@
     "flow-bin": "~0.44.2",
     "flow-typed": "~2.1.2",
     "npm-run-all": "~4.0.2",
+    "nps": "~5.1.0",
+    "nps-utils": "~1.2.0",
     "rimraf": "~2.6.1",
     "rollup": "~0.41.6",
     "rollup-plugin-babel": "~2.7.1",

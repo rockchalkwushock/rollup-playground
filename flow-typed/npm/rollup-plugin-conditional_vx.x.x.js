@@ -1,4 +1,4 @@
-// flow-typed signature: 2c901c46f229e912e8980bef76714814
+// flow-typed signature: 443a2766162b890d589c89bc0f4ea71d
 // flow-typed version: <<STUB>>/rollup-plugin-conditional_v~1.1.1/flow_v0.44.2
 
 /**
@@ -42,18 +42,6 @@ declare module 'rollup-plugin-conditional/src/plugin-api' {
   declare module.exports: any;
 }
 
-declare module 'rollup-plugin-conditional/test/fixtures/samplePlugins' {
-  declare module.exports: any;
-}
-
-declare module 'rollup-plugin-conditional/test/fixtures/sourcecode' {
-  declare module.exports: any;
-}
-
-declare module 'rollup-plugin-conditional/test/index' {
-  declare module.exports: any;
-}
-
 // Filename aliases
 declare module 'rollup-plugin-conditional/build/rollup-plugin-conditional.es.js' {
   declare module.exports: $Exports<'rollup-plugin-conditional/build/rollup-plugin-conditional.es'>;
@@ -69,13 +57,4 @@ declare module 'rollup-plugin-conditional/src/index.js' {
 }
 declare module 'rollup-plugin-conditional/src/plugin-api.js' {
   declare module.exports: $Exports<'rollup-plugin-conditional/src/plugin-api'>;
-}
-declare module 'rollup-plugin-conditional/test/fixtures/samplePlugins.js' {
-  declare module.exports: $Exports<'rollup-plugin-conditional/test/fixtures/samplePlugins'>;
-}
-declare module 'rollup-plugin-conditional/test/fixtures/sourcecode.js' {
-  declare module.exports: $Exports<'rollup-plugin-conditional/test/fixtures/sourcecode'>;
-}
-declare module 'rollup-plugin-conditional/test/index.js' {
-  declare module.exports: $Exports<'rollup-plugin-conditional/test/index'>;
 }
